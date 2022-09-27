@@ -1,0 +1,24 @@
+.titleContainer {
+    text-align: center;
+  }
+  
+  .subtitle {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .subtitle::before,
+  .subtitle::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #b9bfc9;
+  }
+  
+  .subtitle:not(:empty)::before {
+    margin-right: .25em;
+  }
+  
+  .subtitle:not(:empty)::after {
+    margin-left: .25em;
+  }
